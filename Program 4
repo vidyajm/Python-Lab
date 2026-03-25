@@ -1,0 +1,9 @@
+def cumulative_product(lst):
+    result = []
+    product = 1
+    for num in lst:
+        product = product * num
+        result.append(product)
+    return result
+
+print("Cumulative product is:", cumulative_product([1, 2, 3, 4, 5]))
