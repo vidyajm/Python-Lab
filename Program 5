@@ -1,0 +1,6 @@
+def reversed_list(lst):
+    rev=[]
+    for i in range(len(lst)-1,-1,-1):
+        rev.append(lst[i])
+    return rev
+print("Reversed list is:",reversed_list([1,2,3,4]))
