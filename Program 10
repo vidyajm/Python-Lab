@@ -1,0 +1,7 @@
+A={1,2,4,8,5}
+B={2,4,1,5,9,10}
+print("Union:",A|B)
+print("Difference:",A-B)
+print("Difference:",B-A)
+print("Set A:",A)
+print("Set B:",B)
