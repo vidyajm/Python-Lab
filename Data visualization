@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt   
+x = [1, 2, 3, 4, 5]
+y = [10, 20, 25, 30, 40]
+plt.plot(x, y)
+plt.title("Line Chart")
+plt.xlabel("X-axis")
+plt.ylabel("Y-axis")
+plt.show()
+Subjects = ['DSA', 'DMS', 'DL', 'AI']
+Marks = [50, 70, 30, 80]
+
+plt.bar(Subjects, Marks)   
+plt.title("Bar Chart")
+plt.xlabel("Subjects")
+plt.ylabel("Marks")
+plt.show()
