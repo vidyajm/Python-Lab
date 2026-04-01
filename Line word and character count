@@ -1,0 +1,23 @@
+lines = 0
+words = 0
+characters = 0
+
+filename = input("Enter file name: ")
+
+try:
+    file = open(LabProgram9.txt, "r") 
+    for line in file:
+        lines += 1
+        words += len(line.split())
+        characters += len(line)
+    file.close()
+
+    print("\nFile Analysis:")
+    print("Lines:", lines)
+    print("Words:", words)
+    print("Characters:", characters)
+
+except FileNotFoundError:
+    print("Error: File not found!")
+except Exception as e:
+    print("An error occurred:", e)
