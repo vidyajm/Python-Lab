@@ -1,0 +1,10 @@
+def remove_spaces(s):
+    if len(s) == 0:
+        return ""
+    if s[0] == " ":
+        return remove_spaces(s[1:])
+    return s[0] + remove_spaces(s[1:])
+
+text = input("Enter a string: ")
+result = remove_spaces(text)
+print("String without spaces:", result)
