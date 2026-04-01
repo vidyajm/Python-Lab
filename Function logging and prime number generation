@@ -1,0 +1,29 @@
+def logger(func):
+    def wrapper(*args, **kwargs):
+        print("Function is being called")
+        result = func(*args, **kwargs)
+        print("Function execution completed")
+        return result
+    return wrapper
+
+def generate_primes(n):
+    for num in range(2, n):
+        for i in range(2, num):
+            if num % i == 0:
+                break
+        else:
+            yield num
+
+@logger
+def show_primes(limit):
+    print("Prime numbers:")
+    for prime in generate_primes(limit):
+        print(prime, end=" ")
+
+show_primes(20)
+
+
+
+
+
+
