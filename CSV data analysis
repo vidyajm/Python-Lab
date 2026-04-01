@@ -1,0 +1,10 @@
+import pandas as pd
+data = pd.read_csv("data.csv")
+print("First 5 rows:")
+print(data.head())
+print("\nInfo:")
+data.info()
+print("\nSummary:")
+print(data.describe())
+if 'Marks' in data.columns:
+    print("\nAverage Marks:", data['Marks'].mean())
